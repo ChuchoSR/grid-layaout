@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    background-color: #3456A4;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+header h3{
+    padding: 10px;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px gray;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3456A4;
+    color: #FFF;
+}
+
+.side-bar{
+    height: 100vh;
+    width: 15%;
+    background-color:#fff;
+    box-shadow:5px 0px 15px rgb(102, 101, 101);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main{
+    display: flex;
+}
+
+.categories, ul{
+    margin: 20px;
+}
+
+.categories{
+    padding-bottom: 5px;
+    font-size: 1rem;
+    border-bottom: 0.05rem solid black ;
+    font-weight: bold;
+}
+
+.producto img{
+    width: 250px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: #1F2940 1px solid;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+}
+
+.producto h2{
+    color: #3456A4;
+    font-size: 1.1rem;
+}
+
+.producto button{
+    width: 100%;
+    background-color: #3456A4;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.producto button:hover{
+    font-weight: bold;
+    transition: 0.2s;
+    border: #1F2940;
+    box-shadow: 0 5px 10px rgb(102, 101, 101);
+    cursor: pointer;
+}
+
+.producto button:not(:hover){
+    transition: 0.2s;
+}
+
+.producto p{
+    font-size: 0.9rem;
+}
+
+.main-container{
+    margin: 20px auto 0 auto;
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas: 
+    "t-shirt t-shirt t-shirt"
+    "shoe shoe shoe"
+    ;
+    /* row-gap: 15px; */
+    column-gap: 20px;
+}
+
+.t-shirt {
+    grid-area: t-shirt;
+}
+
+.shoe {
+    grid-area: shoe;
+}
+
