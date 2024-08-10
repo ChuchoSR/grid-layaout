@@ -125,11 +125,5 @@ main{
     column-gap: 20px;
 }
 
-.t-shirt {
-    grid-area: t-shirt;
-}
 
-.shoe {
-    grid-area: shoe;
-}
 
